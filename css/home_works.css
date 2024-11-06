@@ -200,6 +200,28 @@
     display: flex;
     justify-content: space-between;
 }
+#start:hover {
+    transform: scale(120%);
+    transition:.6s;
+    color: black;
+    background:linear-gradient(green,limegreen);
+    border: black;
+}
+#stop:hover{
+    transform: scale(120%);
+    transition: .6s;
+    color: black;
+    background:linear-gradient(yellow,greenyellow);
+    border: black;
+}
+#reset:hover{
+    transform: scale(120%);
+    transition: .6s;
+    color: black;
+    background:linear-gradient(red,indianred);
+    border: black;
+
+}
 
 /*--------CHARACTERS---------*/
 
@@ -237,3 +259,7 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+
+
