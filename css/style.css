@@ -50,6 +50,12 @@
 .menu_link a:hover {
     text-decoration: underline;
 }
+#btn-get:hover{
+    color: black;
+    background-color: moccasin;
+    transform:scale(110%) ;
+    transition-duration: 0.5s;
+}
 
 /* MAIN BLOCK */
 
@@ -180,6 +186,7 @@
 .modal_dialog {
     max-width: 500px;
     margin: 200px auto;
+
 }
 
 .modal_content {
@@ -222,6 +229,10 @@
 .modal_input, .btn_min {
     width: 100% !important;
     margin-top: 10px;
+}
+.modal_input:hover{
+    border-radius: 10px;
+    background-color: moccasin;
 }
 
 
