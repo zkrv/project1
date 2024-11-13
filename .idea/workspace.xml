@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="weij">
+    <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="krjnjwe">
+      <change afterPath="$PROJECT_DIR$/data/any.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/persons.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/lesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lesson.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home_works.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home_works.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/home_works.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/home_works.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_works.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_works.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/geeks_3/lesson_3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/geeks_3/dop_lesson&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -130,7 +132,11 @@
       <workItem from="1731002253507" duration="5000" />
       <workItem from="1731002272436" duration="3000" />
       <workItem from="1731006167262" duration="1370000" />
-      <workItem from="1731169278370" duration="2380000" />
+      <workItem from="1731169278370" duration="3174000" />
+      <workItem from="1731322761342" duration="16000" />
+      <workItem from="1731430984208" duration="10525000" />
+      <workItem from="1731496653955" duration="291000" />
+      <workItem from="1731499098304" duration="4364000" />
     </task>
     <task id="LOCAL-00001" summary="weij">
       <option name="closed" value="true" />
@@ -140,14 +146,34 @@
       <option name="project" value="LOCAL" />
       <updated>1730914166996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="krjnjwe">
+      <option name="closed" value="true" />
+      <created>1731171799688</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731171799688</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="weij" />
-    <option name="LAST_COMMIT_MESSAGE" value="weij" />
+    <MESSAGE value="krjnjwe" />
+    <option name="LAST_COMMIT_MESSAGE" value="krjnjwe" />
   </component>
 </project>
