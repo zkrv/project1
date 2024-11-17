@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="krjnjwe">
-      <change afterPath="$PROJECT_DIR$/data/any.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/persons.json" afterDir="false" />
+    <list default="true" id="733efc4d-a2ed-4b03-b37a-512a081ff1bd" name="Changes" comment="сделал">
+      <change afterPath="$PROJECT_DIR$/data/conventor.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/home_works.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home_works.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/home_works.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/home_works.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_works.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_works.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lessons.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/lessons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lesson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/lessons.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lessons.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/geeks_3/dop_lesson&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/geeks_3/lesson_5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -136,7 +135,15 @@
       <workItem from="1731322761342" duration="16000" />
       <workItem from="1731430984208" duration="10525000" />
       <workItem from="1731496653955" duration="291000" />
-      <workItem from="1731499098304" duration="4364000" />
+      <workItem from="1731499098304" duration="5100000" />
+      <workItem from="1731523134105" duration="65000" />
+      <workItem from="1731581097005" duration="680000" />
+      <workItem from="1731582652627" duration="718000" />
+      <workItem from="1731584925519" duration="1811000" />
+      <workItem from="1731587020213" duration="2383000" />
+      <workItem from="1731783826876" duration="865000" />
+      <workItem from="1731784706507" duration="6670000" />
+      <workItem from="1731791458220" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="weij">
       <option name="closed" value="true" />
@@ -154,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731171799688</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="kernfkwnvkejrnvkrejn">
+      <option name="closed" value="true" />
+      <created>1731518442123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731518442123</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +189,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="weij" />
     <MESSAGE value="krjnjwe" />
-    <option name="LAST_COMMIT_MESSAGE" value="krjnjwe" />
+    <MESSAGE value="kernfkwnvkejrnvkrejn" />
+    <option name="LAST_COMMIT_MESSAGE" value="kernfkwnvkejrnvkrejn" />
   </component>
 </project>

@@ -145,6 +145,53 @@
     flex-direction: column;
 }
 
+.som {
+    label{
+        color:red
+    }
+    p{
+        color:red
+    }
+}
+.usd {
+    label {
+        color: green;
+    }
+    p{
+        color:green;
+    }
+}
+.eur {
+    label {
+        color: blue;
+    }
+    p{
+        color:blue;
+    }
+}
+.currency{
+    font-size: 20px;
+}
+#som {
+    border-radius: 10px;
+}#usd {
+    border-radius: 10px;
+}#eur {
+    border-radius: 10px;
+}
+.som:hover {
+    scale: 120%;
+    transition: 0.6s ease;
+}
+.usd:hover {
+    scale: 120%;
+    transition: 0.6s ease;
+}
+.eur:hover {
+    scale: 120%;
+    transition: 0.6s ease;
+}
+
 /*------WEATHER------*/
 
 .weather {
