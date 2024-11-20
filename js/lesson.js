@@ -174,6 +174,79 @@ converter(somInput, usdInput, eurInput)
 converter(usdInput, somInput, eurInput)
 converter(eurInput, somInput, usdInput)
 
+//card switcher
+
+// const nextButton = document.querySelector('#btn-next');
+// const prevButton = document.querySelector('#btn-prev');
+// const cardBlock = document.querySelector('.card');
+// let cardIndex =  0
+// nextButton.onclick = () => {
+//     cardIndex++
+//      fetch(`https://jsonplaceholder.typicode.com/todos/${cardIndex}`)
+//         .then((response)=> response.json())
+//         .then((data)=> {
+//             cardBlock.innerHTML = `
+//             <p>${data.title}</p>
+//             <p>${data.completed}</p>
+//             <span>${data.id}</span>
+//             `
+//
+//         })
+// }
+// prevButton.onclick = () => {
+//     cardIndex--
+//     fetch(`https://jsonplaceholder.typicode.com/todos/${cardIndex}`)
+//         .then((response)=> response.json())
+//         .then((data)=> {
+//             cardBlock.innerHTML = `
+//             <p>${data.title}</p>
+//             <p>${data.completed}</p>
+//             <span>${data.id}</span>
+//             `
+//
+//         })
+// }
+
+const nextButton = document.querySelector('#btn-next');
+const prevButton = document.querySelector('#btn-prev');
+const cardBlock = document.querySelector('.card');
+let cardIndex = 1;
+
+const updateCard = (index) => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${index}`)
+        .then((response) => response.json())
+        .then((data) => {
+            cardBlock.innerHTML = `
+                <p>${data.title}</p>
+                <p>${data.completed}</p>
+                <span>${data.id}</span>
+            `;
+        })
+
+}
+updateCard(cardIndex)
+
+nextButton.onclick = () => {
+    cardIndex++
+    if (cardIndex > 200){
+        cardIndex = 1
+    }
+    updateCard(cardIndex);
+}
+
+prevButton.onclick = () => {
+    cardIndex--;
+    if(cardIndex < 1) {
+        cardIndex = 200
+    }
+    updateCard(cardIndex);
+}
+
+///отобоазить в консоли
+
+const res = fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((response)=> response.json())
+    .then((data)=> console.log(data))
 
 
 

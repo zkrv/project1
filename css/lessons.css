@@ -121,7 +121,18 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.inner_card_switcher {
+    #btn-prev:hover {
+        transform: skew(-10deg);
+        background-color: aqua;
+        color: black;
+    }
+    #btn-next:hover {
+        transform: skew(10deg);
+        background-color: blue;
+        color: black;
+    }
+}
 
 /*-------CONVERTER--------*/
 
@@ -191,6 +202,8 @@
     scale: 120%;
     transition: 0.6s ease;
 }
+
+
 
 /*------WEATHER------*/
 
