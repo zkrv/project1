@@ -245,6 +245,11 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    border-radius: 10px;
+}
+.character-card:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 
 .character-card p, .character-card span {

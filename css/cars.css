@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.cars_list{
+    text-align: center;
+    padding: 20px;
+}
+#cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.car-card {
+    background: linear-gradient(rgba(169, 169, 169, 0.63), rgba(226, 7, 237, 0.98));
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.car-card:hover {
+    transform: scale(1.05);
+}
+.car-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.car-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.car-card p {
+    font-size: 14px;
+    color: #555;
+}

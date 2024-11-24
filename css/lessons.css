@@ -123,12 +123,12 @@
 }
 .inner_card_switcher {
     #btn-prev:hover {
-        transform: skew(-10deg);
+        transform: skew(10deg);
         background-color: aqua;
         color: black;
     }
     #btn-next:hover {
-        transform: skew(10deg);
+        transform: skew(-10deg);
         background-color: blue;
         color: black;
     }

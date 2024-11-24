@@ -196,40 +196,82 @@ updateDisplay();
 
 
 
+// const characterList = document.querySelector("#characters");
+// const request = new XMLHttpRequest();
+// request.open("GET", "../data/persons.json");
+// request.setRequestHeader("Content-type", "application/json");
+// request.responseType = "json";
+// request.send()
+//
+// const renderCharacterList = (data) =>{
+//     data.forEach((character) => {
+//         const characterCard = document.createElement("div");
+//         characterCard.classList.add("character-card");
+//
+//         const characterImage = document.createElement("img");
+//         characterImage.setAttribute("src",character.image)
+//
+//         const characterName = document.createElement("p");
+//         characterName.innerText = character.name;
+//         const characterAge = document.createElement("span");
+//         characterAge.innerText = character.age
+//
+//         characterCard.append(characterImage);
+//         characterCard.append(characterName);
+//         characterCard.append(characterAge);
+//
+//         characterList.append(characterCard);
+//     })
+// }
+//
+// request.onload = () =>{
+//     const data = request.response;
+//     console.log(data)
+//     renderCharacterList(data)
+// }
 const characterList = document.querySelector("#characters");
-const request = new XMLHttpRequest();
-request.open("GET", "../data/persons.json");
-request.setRequestHeader("Content-type", "application/json");
-request.responseType = "json";
-request.send()
 
-const renderCharacterList = (data) =>{
+const fetchCharacters = async () => {
+    try {
+        const response = await fetch("../data/persons.json", {
+            headers: { "Content-type": "application/json" },
+        });
+
+        if (!response.ok) {
+            throw new Error(`Ошибка: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(data);
+        renderCharacterList(data);
+    } catch (error) {
+        console.error("Ошибка загрузки данных:", error);
+    }
+};
+
+const renderCharacterList = (data) => {
     data.forEach((character) => {
         const characterCard = document.createElement("div");
         characterCard.classList.add("character-card");
 
         const characterImage = document.createElement("img");
-        characterImage.setAttribute("src",character.image)
+        characterImage.setAttribute("src", character.image);
 
         const characterName = document.createElement("p");
         characterName.innerText = character.name;
+
         const characterAge = document.createElement("span");
-        characterAge.innerText = character.age
+        characterAge.innerText = character.age;
 
         characterCard.append(characterImage);
         characterCard.append(characterName);
         characterCard.append(characterAge);
 
         characterList.append(characterCard);
-    })
-}
+    });
+};
 
-request.onload = () =>{
-    const data = request.response;
-    console.log(data)
-    renderCharacterList(data)
-}
-
+fetchCharacters();
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET","../data/any.json");
