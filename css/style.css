@@ -51,10 +51,10 @@
     text-decoration: underline;
 }
 #btn-get:hover{
-    color: black;
-    background-color: moccasin;
-    transform:scale(110%) ;
-    transition-duration: 0.5s;
+    transform: scale(1.1);
+    background: linear-gradient(-45deg, deeppink, purple);
+    transition:.5s ease;
+    color: white;
 }
 
 /* MAIN BLOCK */
@@ -74,7 +74,12 @@
 
 .btn-color {
     border-radius: 20px;
-    border-color: white !important;
+}
+.btn-color:hover{
+    transform: scale(1.1);
+    background: linear-gradient(-45deg, deeppink, purple);!important;
+    transition:.5s ease;
+    color: white;
 }
 
 /* FOOTER */
@@ -155,6 +160,7 @@
 .slide.active_slide {
     display: block;
 }
+
 
 /* VIDEO BLOCK */
 

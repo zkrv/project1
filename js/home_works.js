@@ -27,45 +27,73 @@ let positionX = 0;
 let positionY = 0;
 let arrow = "right";
 
-function moveBlock() {
-    const parentWidth = parentBlock.offsetWidth;
-    const parentHeight = parentBlock.offsetHeight;
-    const childWidth = childBlock.offsetWidth;
-    const childHeight = childBlock.offsetHeight;
+// function moveBlock() {
+//     const parentWidth = parentBlock.offsetWidth;
+//     const parentHeight = parentBlock.offsetHeight;
+//     const childWidth = childBlock.offsetWidth;
+//     const childHeight = childBlock.offsetHeight;
+//
+//
+//     if (arrow === "right") {
+//         positionX += 1;
+//         if (positionX + childWidth >= parentWidth) {
+//             arrow = "down";
+//         }
+//     } else if (arrow === "down") {
+//         positionY += 1;
+//         if (positionY + childHeight >= parentHeight) {
+//             arrow = "left";
+//         }
+//     } else if (arrow === "left") {
+//         positionX -= 1;
+//         if (positionX <= 0) {
+//             arrow = "up";
+//         }
+//     } else if (arrow === "up") {
+//         positionY -= 1;
+//         if (positionY <= 0) {
+//             arrow = "right";
+//         }
+//     }
+//
+//
+//     childBlock.style.left = `${positionX}px`;
+//     childBlock.style.top = `${positionY}px`;
+//
+//
+//     requestAnimationFrame(moveBlock);
+// }
+//
+//
+// moveBlock();
+const dvd = document.querySelector('.child_block');
+const container = document.querySelector('.inner_parent_block');
 
+let x = 0, y = 0, dx = 2, dy = 2;
 
-    if (arrow === "right") {
-        positionX += 1;
-        if (positionX + childWidth >= parentWidth) {
-            arrow = "down";
-        }
-    } else if (arrow === "down") {
-        positionY += 1;
-        if (positionY + childHeight >= parentHeight) {
-            arrow = "left";
-        }
-    } else if (arrow === "left") {
-        positionX -= 1;
-        if (positionX <= 0) {
-            arrow = "up";
-        }
-    } else if (arrow === "up") {
-        positionY -= 1;
-        if (positionY <= 0) {
-            arrow = "right";
-        }
-    }
-
-
-    childBlock.style.left = `${positionX}px`;
-    childBlock.style.top = `${positionY}px`;
-
-
-    requestAnimationFrame(moveBlock);
+function getRandomColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
+function animate() {
+    const { offsetWidth: containerWidth, offsetHeight: containerHeight } = container;
+    const { offsetWidth: dvdWidth, offsetHeight: dvdHeight } = dvd;
 
-moveBlock();
+    x += dx;
+    y += dy;
+
+    if (x <= 0 || x + dvdWidth >= containerWidth) {
+        dx = -dx;
+        dvd.style.backgroundColor = getRandomColor();
+    }
+    if (y <= 0 || y + dvdHeight >= containerHeight) {
+        dy = -dy;
+        dvd.style.backgroundColor = getRandomColor();
+    }
+    dvd.style.transform = `translate(${x}px, ${y}px)`;
+    requestAnimationFrame(animate);
+}
+animate();
 
 
 

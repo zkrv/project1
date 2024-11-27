@@ -26,7 +26,12 @@
     width: 100%;
     margin: 20px 0;
 }
-
+#phone_button:hover{
+    transform: scale(1.1);
+    background: linear-gradient(-45deg, deeppink, purple);
+    transition:.5s ease;
+    color: white;
+}
 /* TAB SLIDER */
 
 .tab_slider {
@@ -70,6 +75,12 @@
     cursor: pointer;
     display: grid;
     place-content: center;
+}
+.tab_content_item:hover {
+    transform: scale(1.1);
+    background: linear-gradient(-45deg, deeppink, purple);
+    transition:.5s ease;
+    color: white;
 }
 
 .tab_content_item_active {
@@ -230,4 +241,10 @@
 
 hr {
     width: 100%;
+}
+#search:hover {
+    transform: scale(1.1);
+    background: linear-gradient(-45deg, deeppink, purple);
+    transition:.5s ease;
+    color: white;
 }
